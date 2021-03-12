@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>821</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);
+background-color: rgb(85, 170, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="2">
+     <widget class="QTreeWidget" name="lista">
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+      <column>
+       <property name="text">
+        <string>Nombre</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Autor</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Genero</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Fecha</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ALbum</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;¡BIENVENIDO!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="QPushButton" name="b_filtro">
+      <property name="text">
+       <string>Filtrar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QPushButton" name="b_eliminar">
+      <property name="text">
+       <string>ELIMINAR</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QPushButton" name="b_agregar">
+      <property name="text">
+       <string>AGREGAR</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="b_lista">
+      <property name="text">
+       <string>Listas</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QPushButton" name="b_buscar">
+      <property name="text">
+       <string>BUSCAR</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="2">
+     <widget class="QLineEdit" name="l_buscar"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="b_reproducir">
+      <property name="text">
+       <string>REPRODUCIR</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2" rowspan="2">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Filtrar por:</string>
+      </property>
+      <widget class="QRadioButton" name="r_todo">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>10</y>
+         <width>112</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Todo</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="r_video">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>10</y>
+         <width>112</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Video</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="r_musica">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>10</y>
+         <width>112</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Musica</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="r_imagen">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>10</y>
+         <width>112</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Imagenes</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="b_editar">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 127);</string>
+      </property>
+      <property name="text">
+       <string>EDITAR INFO</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>821</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <action name="a_ver_lista">
+   <property name="text">
+    <string>Ver Listas</string>
+   </property>
+  </action>
+  <action name="a_agregar_lista">
+   <property name="text">
+    <string>Agregar lista</string>
+   </property>
+  </action>
+  <action name="a_eliminar_lista">
+   <property name="text">
+    <string>Eliminar lista</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
